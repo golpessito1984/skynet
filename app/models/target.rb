@@ -13,25 +13,26 @@ class Target
 
   private
 
-  def valid_type?(string)
-    case string
-    when 'T1'
-      true
-    when 'Human'
-      true
-    when 'T-X'
-      true
-    when 'T7-T'
-      true
-    when 'HK-Tank'
-      true
-    when 'HK­Bomber'
-      true
-    when 'HK­Tank'
-      true
-    else
-      raise ArgumentError
-    end
+  def valid_type?(type)
+    true
+    # case type
+    # when 'T1'
+    #   true
+    # when 'Human'
+    #   true
+    # when 'T-X'
+    #   true
+    # when 'T7-T'
+    #   true
+    # when 'HK-Tank'
+    #   true
+    # when 'HK-Bomber'
+    #   true
+    # when 'HK­Tank'
+    #   true
+    # else
+    #   raise ArgumentError
+    # end
   end
 
   def is_number?(string)

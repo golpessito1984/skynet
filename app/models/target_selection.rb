@@ -9,15 +9,18 @@ class TargetSelection
 
   def select_target
     @attack_mode.each do |attack_mode|
+      # if attack_mode == "priorize-t-x"
+      #   binding.pry
+      # end
       case attack_mode
-      when "Closest­first"
-        order_by_position
-      when "Furthest­first​ :"
+      when "closest-first"
+          order_by_position
+      when "furthest-first"
         order_by_position("DESC")
-      when "Avoid­crossfire"
+      when "avoid­crossfire"
         avoid_cross_fire
-      when "Priorize­t­x"
-        priroize_t_x
+      when "priorize-t-x"
+        priorize_t_x
       end
     end
     order_by_damage(0)
